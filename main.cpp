@@ -24,3 +24,16 @@ int main () {
     }
      return 0;
 }
+
+int main () {
+    int n, m, i;
+    cout<<"elenco i numeri da N a M con passo 2";
+    cout<<"inserisci N";
+    cin>>n;
+    cout<<"inserisci M";
+    cin>>m;
+    for (i=m; i<=n; i += 2) {
+        cout <<i<<;
+    }
+    return=0;
+}
