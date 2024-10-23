@@ -25,15 +25,23 @@ int main () {
      return 0;
 }
 
-int main () {
-    int n, m, i;
-    cout<<"elenco i numeri da N a M con passo 2";
-    cout<<"inserisci N";
+int i, n, contpari, contdispari, restodue, x;
+do {
+    cout<<"quanti numeri da generare?";
     cin>>n;
-    cout<<"inserisci M";
-    cin>>m;
-    for (i=m; i<=n; i += 2) {
-        cout <<i<<;
+} while (n<0);
+contpari=0;
+contdispari=0;
+i=0;
+for (i=0; i<= n; i++) {
+    x=rand() % 1001;
+    restodue=x%2;
+    if(restodue==0) {
+        contpari=contpari+1;
+    } else {
+        contdispari=contdispari+1;
     }
-    return=0;
+    cout <<i+1<<"numero generato"<<x<<;
 }
+cout<<"sono stati generati"<<contpari<<"numeri pari e"<<contdispari<<"numeri dispari";
+return=0; 
