@@ -1,11 +1,26 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int main () {
     string nome;
-    cout << "Inserisci il tuo nome: ";
-    cin >> nome;
-    cout << "Ciao " <<nome<< "!" << endl;
+    int i, n;
+    cout << "Quanti atleti ci sono in gara?" << endl;
+    cin >> n;
+    for (i = 0; i <= n; i++) {
+        cout << "Inserisci il nome dell'atleta" << endl;
+        cin >> nome;
+        cout << "ciao" << nome << endl;
+        }
+    return 0;
+    
+    int n, m, i;
+    cout << "elenco i numeri da N a M con passo 2" << endl;
+    cout << "Inserisci N" << endl;
+    cin >> n;
+    cout << " inserisci M" << endl;
+    cin >> m;
+    for  (i = m; i <= n; i += 2) {
+        cout  << i  << endl;
+    }
+     return 0;
 }
-
-//LEGGERE LE ISTRUZIONI NEL FILE README.md
